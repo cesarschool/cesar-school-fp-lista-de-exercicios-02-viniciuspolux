@@ -9,8 +9,36 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 1")
-    
+    a = int(input('Primeiro valor: '))
+    b = int(input('Segundo valor: '))
+    c = int(input('Terceiro valor: '))
+    d = int(input('Quarto valor: '))
+    e = int(input('Quinto valor: '))
+
+    if a<b and a<c and a<d and a<e:
+        menor = a
+    if b<a and b<c and b<d and b<e:
+        menor = b
+    if c<a and c<b and c<d and c<e:
+        menor = c
+    if d<a and d<b and d<c and d<e:
+        menor = d
+    if e<a and e<b and e<c and e<d:
+        menor = e
+
+
+    if a>b and a>c and a>d and a>e:
+        maior = a
+    if b>a and b>c and b>d and b>e:
+        maior = b
+    if c>a and c>b and c>d and c>e:
+        maior = c
+    if d>a and d>b and d>c and d>e:
+        maior = d
+    if e>a and e>b and e>c and e>d:
+        maior = e
+
+    print('O menor numero foi {} e o maior foi {}'.format(menor,maior))
 
 
 if __name__ == '__main__':
